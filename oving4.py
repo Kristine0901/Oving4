@@ -68,3 +68,27 @@ print("Netto Min:",tid_Netto_min, round(df_Netto_min,2))
 #Oppgave 10
 df_total_produksjon = df["Production"].sum()
 print("Total produksjon: ", df_total_produksjon)
+
+#oppgave 11
+df.plot(
+    y=["Production", "Consumption"],
+    figsize = (10,5)
+)
+plt.title("Produksjon og forbruk som funksjon av tid i 2026")
+plt.grid = True
+plt.xlabel= ("Tid")
+plt.ylabel=("Produksjon og forbruk")
+plt.legend()
+plt.show()
+
+#Oppgave 12
+df.plot(
+    y=["Production", "Consumption", "Netto"],
+    figsize = (10,5)
+)
+plt.title("Produksjon, forbruk og nettoeffekt som funksjon av tid i 2026")
+plt.grid = True
+plt.xlabel= ("Tid")
+plt.ylabel=("Produksjon, forbruk og nettoeffekt")
+plt.legend()
+plt.show()
