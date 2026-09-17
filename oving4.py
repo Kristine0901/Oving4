@@ -39,3 +39,32 @@ plt.show()
 #oppgave 7
 df["Netto"] = (df["Production"] - df["Consumption"])
 print(df["Netto"])
+
+#Oppgave 8
+tid_max = df["Production"].idxmax()
+df_max = df["Production"].max()
+
+print( "Max:",tid_max, df_max)
+
+tid_min = df["Production"].idxmin()
+df_min = df["Production"].min()
+
+print("Min:",tid_min, df_min)
+
+df_mean = df["Production"].mean()
+print("Gjennomsnittlig produksjon: ", round(df_mean, 2))
+
+#Oppgave 9
+tid_Netto_max = df["Netto"].idxmax()
+df_Netto_max = df["Netto"].max()
+
+print( "Netto Max:",tid_Netto_max, round(df_Netto_max,2))
+
+tid_Netto_min = df["Netto"].idxmin()
+df_Netto_min = df["Netto"].min()
+
+print("Netto Min:",tid_Netto_min, round(df_Netto_min,2))
+
+#Oppgave 10
+df_total_produksjon = df["Production"].sum()
+print("Total produksjon: ", df_total_produksjon)
