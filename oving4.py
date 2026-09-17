@@ -35,3 +35,7 @@ plt.grid(True)
 plt.savefig("Oving4/ObservasjonEnLastProfil.png")
 
 plt.show()
+
+#oppgave 7
+df["Netto"] = (df["Production"] - df["Consumption"])
+print(df["Netto"])
